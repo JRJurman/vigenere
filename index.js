@@ -3896,7 +3896,7 @@ const state = require('./models/state');
 
 app.model(state);
 
-app.router({ default: '/' }, [
+app.router([
   ['/', chrome.bind(this, main)],
 ]);
 
